@@ -1,0 +1,54 @@
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; /* Pour que le layout prenne toute la hauteur de la fenêtre */
+    background-color: #000000; /* Juste pour voir son fond */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Garde le header bien au-dessus du contenu */
+    justify-content: space-between;
+    
+    background-color: #000000; /* Fond noir opaque */
+    border-bottom: 1px solid rgba(175, 5, 98, 0.527);
+
+
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: -15px; /* Déborde légèrement sous le header */
+    left: 50%;
+    transform: translateX(-50%); /* Centre parfaitement l'effet */
+    width: 60%; /* Largeur de l'arc de cercle (ajustez à 40% ou 80% selon vos goûts) */
+    height: 15px; /* Hauteur de l'ombre */
+    
+    /* Dégradé radial : très opaque et coloré au centre, transparent sur les côtés */
+    background: radial-gradient(ellipse at top, rgba(175, 5, 99, 0.7) 0%, rgba(175, 5, 99, 0) 70%);
+    
+    z-index: -1; /* Place l'effet derrière le contenu du header mais au-dessus de la page */
+    pointer-events: none; /* Empêche l'élément de bloquer les clics */
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content {
+    width: 100%
+}

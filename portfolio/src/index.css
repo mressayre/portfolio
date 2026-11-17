@@ -1,0 +1,24 @@
+/* 1. Ajoutez un reset global tout en haut si ce n'est pas déjà fait */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* 2. Nettoyez le conteneur #root */
+#root {
+  width: 100%;             /* Prend toute la largeur disponible */
+  max-width: 100%;         /* Supprime la limite de 1126px */
+  margin: 0;               /* Plus de centrage forcé avec des marges vides */
+  text-align: left;        /* Souvent mieux pour un site pro que text-align: center global */
+  border-inline: none;     /* SUPPRIME LES BORDURES VERTICALES ! */
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}

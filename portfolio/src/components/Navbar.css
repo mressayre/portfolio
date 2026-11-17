@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.inactive {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.active {
+    text-decoration: none;
+    color: #414040;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #ffffff; /* Couleur de fond pour l'élément actif */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.inactive:hover {
+    transform: scale(1.1);
+    color: #414040;
+}
+
+.active:hover {
+    transform: scale(1.1);
+    color: #414040;
+}
