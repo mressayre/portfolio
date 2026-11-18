@@ -119,8 +119,6 @@ export default function ProjectsCarousel() {
 
       {/* Bloc de description dynamique que vous aviez préparé dans le CSS */}
       <div className="project-details-container">
-        <span className="details-category">{activeProject.category}</span>
-        <h3 className="details-title">{activeProject.title}</h3>
         <p className="details-description">{activeProject.description}</p>
       </div>
     </section>
