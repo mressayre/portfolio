@@ -1,0 +1,28 @@
+.LinkButton img {
+    width: 60px;  /* Ajustez la taille selon vos besoins */
+    height: 60px;
+    filter: invert(1); /* Inverse les couleurs du SVG (passe du noir au blanc) */
+}
+
+.download-button {
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(175, 5, 98, 0.527);
+    color: #ffff;
+    font-family : "Inter", sans-serif;
+    font-size : 1.75rem;
+    padding : 16px;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    gap : 4px;
+}
+
+.logo {
+    width : 60px;
+    height : 60px;
+}
+
+.download-button:hover {
+    border: 2px solid white;
+}
